@@ -249,6 +249,7 @@ def run(args):
         print('-' * 30)
 
         if val_auc > best_val_auc:
+	    best_val_loss = val_loss
             best_val_auc = val_auc
             best_val_accuracy = val_accuracy
             best_val_sensitivity = val_sensitivity
